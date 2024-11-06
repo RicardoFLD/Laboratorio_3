@@ -9,5 +9,5 @@
             <asp:BoundField DataField="Estado" HeaderText="Estado" SortExpression="Estado" />
         </Columns>
     </asp:GridView>
-    <asp:SqlDataSource ID="SqlDataSource1" run<asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="Server=localhost;Database=TuBaseDeDatos;Integrated Security=True;" SelectCommand="dbo.spConsultarProvincias"></asp:SqlDataSource>at="server" ConnectionString="<%$ ConnectionStrings:localhost %>" SelectCommand="dbo.spConsultarProvincias"></asp:SqlDataSource>
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="Server=localhost;Database=PV2024C2_Lab03;Integrated Security=True;" SelectCommand="dbo.spConsultarProvincias"></asp:SqlDataSource>at="server" ConnectionString="<%$ ConnectionStrings:localhost %>" SelectCommand="dbo.spConsultarProvincias"></asp:SqlDataSource>
 </asp:Content>
