@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PV2024C2_Lab03ModelStoreContainer" CdmEntityContainer="PV2024C2_Lab03Entities">
+    <EntitySetMapping Name="Canton">
+      <EntityTypeMapping TypeName="PV2024C2_Lab03Model.Canton">
+        <MappingFragment StoreEntitySet="Canton">
+          <ScalarProperty Name="idCanton" ColumnName="idCanton" />
+          <ScalarProperty Name="idProvincia" ColumnName="idProvincia" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="fechaCreacion" ColumnName="fechaCreacion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Distrito">
+      <EntityTypeMapping TypeName="PV2024C2_Lab03Model.Distrito">
+        <MappingFragment StoreEntitySet="Distrito">
+          <ScalarProperty Name="idDistrito" ColumnName="idDistrito" />
+          <ScalarProperty Name="idCanton" ColumnName="idCanton" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="fechaCreacion" ColumnName="fechaCreacion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Provincia">
+      <EntityTypeMapping TypeName="PV2024C2_Lab03Model.Provincia">
+        <MappingFragment StoreEntitySet="Provincia">
+          <ScalarProperty Name="idProvincia" ColumnName="idProvincia" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="fechaCreacion" ColumnName="fechaCreacion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="spConsultarCantones" FunctionName="PV2024C2_Lab03Model.Store.spConsultarCantones">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="PV2024C2_Lab03Model.spConsultarCantones_Result">
+          <ScalarProperty Name="idCanton" ColumnName="idCanton" />
+          <ScalarProperty Name="idProvincia" ColumnName="idProvincia" />
+          <ScalarProperty Name="provincia" ColumnName="provincia" />
+          <ScalarProperty Name="canton" ColumnName="canton" />
+          <ScalarProperty Name="fechaCreacion" ColumnName="fechaCreacion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spConsultarCantonesPorProvinciaId" FunctionName="PV2024C2_Lab03Model.Store.spConsultarCantonesPorProvinciaId">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="PV2024C2_Lab03Model.spConsultarCantonesPorProvinciaId_Result">
+          <ScalarProperty Name="idCanton" ColumnName="idCanton" />
+          <ScalarProperty Name="idProvincia" ColumnName="idProvincia" />
+          <ScalarProperty Name="canton" ColumnName="canton" />
+          <ScalarProperty Name="fechaCreacion" ColumnName="fechaCreacion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spConsultarCantonPorId" FunctionName="PV2024C2_Lab03Model.Store.spConsultarCantonPorId">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="PV2024C2_Lab03Model.spConsultarCantonPorId_Result">
+          <ScalarProperty Name="idCanton" ColumnName="idCanton" />
+          <ScalarProperty Name="idProvincia" ColumnName="idProvincia" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="fechaCreacion" ColumnName="fechaCreacion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spConsultarDistritoPorId" FunctionName="PV2024C2_Lab03Model.Store.spConsultarDistritoPorId">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="PV2024C2_Lab03Model.spConsultarDistritoPorId_Result">
+          <ScalarProperty Name="idDistrito" ColumnName="idDistrito" />
+          <ScalarProperty Name="idCanton" ColumnName="idCanton" />
+          <ScalarProperty Name="idProvincia" ColumnName="idProvincia" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="fechaCreacion" ColumnName="fechaCreacion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spConsultarDistritos" FunctionName="PV2024C2_Lab03Model.Store.spConsultarDistritos">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="PV2024C2_Lab03Model.spConsultarDistritos_Result">
+          <ScalarProperty Name="idDistrito" ColumnName="idDistrito" />
+          <ScalarProperty Name="idCanton" ColumnName="idCanton" />
+          <ScalarProperty Name="idProvincia" ColumnName="idProvincia" />
+          <ScalarProperty Name="provincia" ColumnName="provincia" />
+          <ScalarProperty Name="canton" ColumnName="canton" />
+          <ScalarProperty Name="distrito" ColumnName="distrito" />
+          <ScalarProperty Name="fechaCreacion" ColumnName="fechaCreacion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spConsultarProvinciaPorId" FunctionName="PV2024C2_Lab03Model.Store.spConsultarProvinciaPorId" />
+    <FunctionImportMapping FunctionImportName="spConsultarProvincias" FunctionName="PV2024C2_Lab03Model.Store.spConsultarProvincias">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="PV2024C2_Lab03Model.spConsultarProvincias_Result">
+          <ScalarProperty Name="idProvincia" ColumnName="idProvincia" />
+          <ScalarProperty Name="provincia" ColumnName="provincia" />
+          <ScalarProperty Name="fechaCreacion" ColumnName="fechaCreacion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spCrearCanton" FunctionName="PV2024C2_Lab03Model.Store.spCrearCanton" />
+    <FunctionImportMapping FunctionImportName="spCrearDistrito" FunctionName="PV2024C2_Lab03Model.Store.spCrearDistrito" />
+    <FunctionImportMapping FunctionImportName="spCrearProvincia" FunctionName="PV2024C2_Lab03Model.Store.spCrearProvincia" />
+    <FunctionImportMapping FunctionImportName="spEditarCanton" FunctionName="PV2024C2_Lab03Model.Store.spEditarCanton" />
+    <FunctionImportMapping FunctionImportName="spEditarDistrito" FunctionName="PV2024C2_Lab03Model.Store.spEditarDistrito" />
+    <FunctionImportMapping FunctionImportName="spEditarProvincia" FunctionName="PV2024C2_Lab03Model.Store.spEditarProvincia" />
+    <FunctionImportMapping FunctionImportName="spEliminarCanton" FunctionName="PV2024C2_Lab03Model.Store.spEliminarCanton" />
+    <FunctionImportMapping FunctionImportName="spEliminarDistrito" FunctionName="PV2024C2_Lab03Model.Store.spEliminarDistrito" />
+    <FunctionImportMapping FunctionImportName="spEliminarProvincia" FunctionName="PV2024C2_Lab03Model.Store.spEliminarProvincia" />
+  </EntityContainerMapping>
+</Mapping>
