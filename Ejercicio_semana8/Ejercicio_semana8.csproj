@@ -142,7 +142,9 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Pages\CrearProvincia.aspx" />
     <Content Include="Pages\ListaProvincias.aspx" />
+    <Content Include="Pages\ResultadoDeCrearProvincia.aspx" />
     <Content Include="Pagina1.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -282,12 +284,26 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Pages\CrearProvincia.aspx.cs">
+      <DependentUpon>CrearProvincia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\CrearProvincia.aspx.designer.cs">
+      <DependentUpon>CrearProvincia.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\ListaProvincias.aspx.cs">
       <DependentUpon>ListaProvincias.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Pages\ListaProvincias.aspx.designer.cs">
       <DependentUpon>ListaProvincias.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ResultadoDeCrearProvincia.aspx.cs">
+      <DependentUpon>ResultadoDeCrearProvincia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ResultadoDeCrearProvincia.aspx.designer.cs">
+      <DependentUpon>ResultadoDeCrearProvincia.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pagina1.aspx.cs">
       <DependentUpon>Pagina1.aspx</DependentUpon>
